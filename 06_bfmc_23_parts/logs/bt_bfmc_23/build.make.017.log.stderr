@@ -1,0 +1,5 @@
+In file included from [01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:2[m[K:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/include/Reset.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus Reset::onStart()[m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/include/Reset.hpp:20:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalue[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   20 |         bool               [01;35m[Kvalue[m[K = msg.value();
+      |                            [01;35m[K^~~~~[m[K

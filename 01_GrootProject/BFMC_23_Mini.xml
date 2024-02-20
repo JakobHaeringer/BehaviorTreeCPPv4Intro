@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="Mini">
+  <BehaviorTree ID="Mini">
+    <Fallback>
+      <Sequence>
+        <StartUp error=""/>
+        <RoutePlanning error=""/>
+      </Sequence>
+      <Reset error=""/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Reset"
+            editable="true">
+      <input_port name="error"/>
+    </Action>
+    <Action ID="RoutePlanning"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="StartUp"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

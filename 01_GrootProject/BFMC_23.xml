@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Fallback>
+      <Sequence>
+        <StartUp/>
+        <RoutePlanning/>
+        <Sequence>
+          <ParkCar/>
+          <Roundabout/>
+          <Fallback name="CrosswalkSubTree">
+            <Crosswalk/>
+            <Sequence>
+              <ApproachStopLine/>
+              <PedestrianOnRoad/>
+            </Sequence>
+          </Fallback>
+          <ChangeLane/>
+          <Fallback name="IntersectionSubTree">
+            <Intersection/>
+            <Sequence>
+              <ApproachStopLine/>
+              <Stop/>
+              <TrafficLight/>
+              <CrossIntersection/>
+            </Sequence>
+          </Fallback>
+          <FollowCar/>
+          <FollowLane/>
+        </Sequence>
+      </Sequence>
+      <Reset/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="ApproachStopLine"
+            editable="true"/>
+    <Action ID="ChangeLane"
+            editable="true"/>
+    <Action ID="CrossIntersection"
+            editable="true"/>
+    <Action ID="Crosswalk"
+            editable="true"/>
+    <Action ID="FollowCar"
+            editable="true"/>
+    <Action ID="FollowLane"
+            editable="true"/>
+    <Action ID="Intersection"
+            editable="true"/>
+    <Action ID="ParkCar"
+            editable="true"/>
+    <Action ID="PedestrianOnRoad"
+            editable="true"/>
+    <Action ID="Reset"
+            editable="true"/>
+    <Action ID="Roundabout"
+            editable="true"/>
+    <Action ID="RoutePlanning"
+            editable="true"/>
+    <Action ID="StartUp"
+            editable="true"/>
+    <Action ID="Stop"
+            editable="true"/>
+    <Action ID="TrafficLight"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>

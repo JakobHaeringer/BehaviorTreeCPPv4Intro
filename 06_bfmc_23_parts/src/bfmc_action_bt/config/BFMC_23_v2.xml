@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="MainTreev2">
+  <BehaviorTree ID="MainTreev2">
+    <Fallback>
+      <Sequence>
+        <StartUp error=""/>
+        <RoutePlanning error=""/>
+        <Sequence>
+          <ParkCar error=""/>
+          <ChangeLane error=""/>
+          <PedestrianOnRoad error=""/>
+          <Sequence>
+            <ApproachStopLine error=""/>
+            <Sequence>
+              <Roundabout error=""/>
+              <Stop error=""/>
+              <Crosswalk error=""/>
+              <TrafficLight error=""/>
+              <CrossIntersection error=""/>
+            </Sequence>
+          </Sequence>
+          <FollowCar error=""/>
+          <FollowLane error=""/>
+        </Sequence>
+      </Sequence>
+      <Reset error=""/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="ApproachStopLine"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="ChangeLane"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="CrossIntersection"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="Crosswalk"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="FollowCar"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="FollowLane"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="ParkCar"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="PedestrianOnRoad"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="Reset"
+            editable="true">
+      <inout_port name="error"/>
+    </Action>
+    <Action ID="Roundabout"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="RoutePlanning"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="StartUp"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="Stop"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+    <Action ID="TrafficLight"
+            editable="true">
+      <output_port name="error"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

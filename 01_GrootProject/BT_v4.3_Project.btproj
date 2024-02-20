@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="Project">
+    <include path="BFMC_23.xml"/>
+    <include path="Blackboard_Ports.xml"/>
+    <include path="SimpleBallExample.xml"/>
+    <include path="Simple_ROS_Example.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Condition ID="BallFound" editable="true"/>
+        <Condition ID="BallGrabbed" editable="true"/>
+        <Condition ID="BallThrown" editable="true"/>
+        <Action ID="FindBall" editable="true"/>
+        <Action ID="GrabBall" editable="true"/>
+        <Action ID="ObserveEnvironment" editable="true"/>
+        <Action ID="Reset" editable="true"/>
+        <Action ID="SendSteering" editable="true">
+            <input_port name="steering"/>
+            <input_port name="steering_changed"/>
+        </Action>
+        <Action ID="SetSteering" editable="true">
+            <output_port name="steering"/>
+        </Action>
+        <Condition ID="SteeringIsZero" editable="true">
+            <input_port name="steering"/>
+            <output_port name="steering_changed"/>
+        </Condition>
+        <Action ID="ThrowBall" editable="true"/>
+    </TreeNodesModel>
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="FindingBall_ROS">
+    <Sequence>
+      <BallFound/>
+      <Sleep msec="2000"/>
+      <FindBall/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Condition ID="BallFound"
+               editable="true"/>
+    <Action ID="FindBall"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>

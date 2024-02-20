@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="Project">
+    <include path="BFMC_23_v2.xml"/>
+    <include path="Simple_ROS_Example.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Action ID="ApproachStopLine" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Condition ID="BallFound" editable="true"/>
+        <Action ID="ChangeLane" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="CrossIntersection" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="Crosswalk" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="FindBall" editable="true"/>
+        <Action ID="FollowCar" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="FollowLane" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="ParkCar" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="PedestrianOnRoad" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="Reset" editable="true">
+            <inout_port name="error"/>
+        </Action>
+        <Action ID="Roundabout" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="RoutePlanning" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="StartUp" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="Stop" editable="true">
+            <output_port name="error"/>
+        </Action>
+        <Action ID="TrafficLight" editable="true">
+            <output_port name="error"/>
+        </Action>
+    </TreeNodesModel>
+</root>

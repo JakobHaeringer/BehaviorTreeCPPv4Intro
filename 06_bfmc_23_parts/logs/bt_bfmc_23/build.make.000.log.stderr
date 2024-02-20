@@ -1,0 +1,77 @@
+In file included from [01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/include/BTClasses.hpp:1[m[K,
+                 from [01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:1[m[K:
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = ApproachStopLine; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:18:66:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+  370 |     static_assert([01;31m[K!(param_constructable && !has_static_ports_list)[m[K,
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = ChangeLane; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:19:54:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = CrossIntersection; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:20:68:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = Crosswalk; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:21:52:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = FollowCar; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:22:52:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = FollowLane; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:23:54:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = ParkCar; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:24:48:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = PedestrianOnRoad; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:25:66:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = Reset; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:26:44:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = Roundabout; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:27:54:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = RoutePlanning; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:28:60:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = StartUp; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:29:48:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = Stop; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:30:42:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = TrafficLight; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:31:58:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:370:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:
+  PortsList providedPorts();
+
+make[2]: *** [CMakeFiles/planner.dir/build.make:63: CMakeFiles/planner.dir/src/planner_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/planner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

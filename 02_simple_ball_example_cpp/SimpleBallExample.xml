@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4"
+      main_tree_to_execute="SubTreeBall">
+  <BehaviorTree ID="FindingBall">
+    <Fallback>
+      <BallFound/>
+      <FindBall/>
+    </Fallback>
+  </BehaviorTree>
+
+  <BehaviorTree ID="GrabbingBall">
+    <Fallback>
+      <BallGrabbed/>
+      <GrabBall/>
+    </Fallback>
+  </BehaviorTree>
+
+  <BehaviorTree ID="SubTreeBall">
+    <Fallback>
+      <Sequence>
+        <SubTree ID="FindingBall"/>
+        <SubTree ID="GrabbingBall"/>
+        <SubTree ID="ThrowingBall"
+                 _autoremap="false"/>
+      </Sequence>
+      <Reset/>
+    </Fallback>
+  </BehaviorTree>
+
+  <BehaviorTree ID="ThrowingBall">
+    <Fallback>
+      <BallThrown/>
+      <ThrowBall/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Condition ID="BallFound"
+               editable="true"/>
+    <Condition ID="BallGrabbed"
+               editable="true"/>
+    <Condition ID="BallThrown"
+               editable="true"/>
+    <Action ID="FindBall"
+            editable="true"/>
+    <Action ID="GrabBall"
+            editable="true"/>
+    <Action ID="Reset"
+            editable="true"/>
+    <Action ID="ThrowBall"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>

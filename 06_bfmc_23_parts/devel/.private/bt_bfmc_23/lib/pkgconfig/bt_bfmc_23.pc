@@ -1,0 +1,8 @@
+prefix=/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/devel/.private/bt_bfmc_23
+
+Name: bt_bfmc_23
+Description: Description of bt_bfmc_23
+Version: 0.0.0
+Cflags: -I/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/include
+Libs: -L${prefix}/lib 
+Requires: roscpp behaviortree_cpp

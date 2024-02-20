@@ -1,0 +1,9 @@
+<launch>
+    <env name="ROSCONSOLE_FORMAT" value="[${severity}] [${time}] [${node}]: ${message}"/>
+
+    <node pkg="bt_bfmc_23" type="planner" name="planner"  output="screen">
+        <!-- BehaviorTree -->
+        <param name="xml_file" type="str" value="$(find bt_bfmc_23)/config/BFMC_23_v2.xml" />
+    </node>
+</launch>
+

@@ -1,0 +1,15 @@
+<launch>
+    <env name="ROSCONSOLE_CONFIG_FILE"   value="$(find my_behaviortree)/config/rosconsole.config"/>
+
+    <env name="ROSCONSOLE_FORMAT" value="[${severity}] [${time}] [${node}]: ${message}"/>
+    <!-- Parameters for the output:
+    screen  = output = ROS_INFO , ROS_WARN, ROS_ERROR, ROS_FATAL, ROS_DEBUG  
+    log     = output = ROS_WARN, ROS_ERROR, ROS_FATAL, ROS_DEBUG              -   (all except ROS_INFO)
+    Keep in mind that ROS_DEBUG is only displayed when your logger_level is specified to do so.
+    -->
+
+    <node pkg="my_behaviortree" type="bt_planner"     name="bt_planner"     output="screen">
+            <param name="xml_file" type="str" value="$(find my_behaviortree)/config/Simple_ROS_Example.xml" />
+    </node>
+</launch>
+

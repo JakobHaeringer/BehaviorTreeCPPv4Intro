@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find bfmc_action)/launch/action.launch">
+        <arg name="distanceToDrive" value="3"/>
+        <arg name="currentNodeID"   value="118"/>
+        <arg name="targetNodeID"    value="18"/>
+        <arg name="initialPoseX"    value="5.27"/>
+        <arg name="initialPoseY"    value="7.99"/>
+    </include>
+    <include file="$(find bfmc_input)/launch/input.launch"/>
+    <include file="$(find bfmc_output)/launch/output.launch"/>
+</launch>

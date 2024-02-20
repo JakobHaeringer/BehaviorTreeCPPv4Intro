@@ -1,0 +1,16 @@
+In file included from [01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/include/BTClasses.hpp:1[m[K,
+                 from [01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:1[m[K:
+/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&, ExtraArgs ...) [with T = Reset; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/jakob/Documents/03_Behavior_Tree/06_bfmc_23_parts/src/bfmc_action_bt/src/planner_node.cpp:26:44:[m[K   required from here
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:363:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: The given type can't be abstract
+  363 |     static_assert([01;31m[K!std::is_abstract_v<T>[m[K, "The given type can't be abstract");
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/behaviortree_cpp/bt_factory.h:374:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: since you have a static method providedPorts(),
+you MUST add a constructor with signature:
+(const std::string&, const NodeParameters&)
+
+  374 |     static_assert([01;31m[K!(has_static_ports_list && !param_constructable)[m[K,
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/planner.dir/build.make:63: CMakeFiles/planner.dir/src/planner_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/planner.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

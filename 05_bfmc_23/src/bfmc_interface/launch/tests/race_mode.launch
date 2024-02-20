@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find bfmc_action)/launch/action.launch">
+        <arg name="distanceToDrive"     value="5000"/>
+        <arg name="raceMode"            value="true"/>
+        <arg name="timings/brake"       value="0"/>
+        <arg name="timings/stop"        value="0"/>
+        <arg name="timings/pedestrian"  value="0"/>
+    </include>
+    <include file="$(find bfmc_input)/launch/input.launch"/>
+    <include file="$(find bfmc_output)/launch/output.launch"/>
+</launch>
